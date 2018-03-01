@@ -1,0 +1,386 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A6A92ADD-9C33-4798-9569-54B9EF105725}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>公寓管理系统</RootNamespace>
+    <AssemblyName>公寓管理系统</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="experimentDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>experimentDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="修改密码.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="修改密码.Designer.cs">
+      <DependentUpon>修改密码.cs</DependentUpon>
+    </Compile>
+    <Compile Include="公寓管理系统（管理端）.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="公寓管理系统（管理端）.Designer.cs">
+      <DependentUpon>公寓管理系统（管理端）.cs</DependentUpon>
+    </Compile>
+    <Compile Include="宿舍更换.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="宿舍更换.Designer.cs">
+      <DependentUpon>宿舍更换.cs</DependentUpon>
+    </Compile>
+    <Compile Include="密码找回.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="密码找回.Designer.cs">
+      <DependentUpon>密码找回.cs</DependentUpon>
+    </Compile>
+    <Compile Include="添加用户.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="添加用户.Designer.cs">
+      <DependentUpon>添加用户.cs</DependentUpon>
+    </Compile>
+    <Compile Include="公寓管理系统.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="公寓管理系统.Designer.cs">
+      <DependentUpon>公寓管理系统.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="住宿信息查询.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="住宿信息查询.Designer.cs">
+      <DependentUpon>住宿信息查询.cs</DependentUpon>
+    </Compile>
+    <Compile Include="公寓基本设置.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="公寓基本设置.Designer.cs">
+      <DependentUpon>公寓基本设置.cs</DependentUpon>
+    </Compile>
+    <Compile Include="公寓财产统计.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="公寓财产统计.Designer.cs">
+      <DependentUpon>公寓财产统计.cs</DependentUpon>
+    </Compile>
+    <Compile Include="员工分数录入.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="员工分数录入.Designer.cs">
+      <DependentUpon>员工分数录入.cs</DependentUpon>
+    </Compile>
+    <Compile Include="员工基本资料.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="员工基本资料.Designer.cs">
+      <DependentUpon>员工基本资料.cs</DependentUpon>
+    </Compile>
+    <Compile Include="员工评分设置.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="员工评分设置.Designer.cs">
+      <DependentUpon>员工评分设置.cs</DependentUpon>
+    </Compile>
+    <Compile Include="外来人员登记.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="外来人员登记.Designer.cs">
+      <DependentUpon>外来人员登记.cs</DependentUpon>
+    </Compile>
+    <Compile Include="学生住宿统计.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="学生住宿统计.Designer.cs">
+      <DependentUpon>学生住宿统计.cs</DependentUpon>
+    </Compile>
+    <Compile Include="学生信息增加.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="学生信息增加.Designer.cs">
+      <DependentUpon>学生信息增加.cs</DependentUpon>
+    </Compile>
+    <Compile Include="学生晚归登记.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="学生晚归登记.Designer.cs">
+      <DependentUpon>学生晚归登记.cs</DependentUpon>
+    </Compile>
+    <Compile Include="学生管理系统帮助.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="学生管理系统帮助.Designer.cs">
+      <DependentUpon>学生管理系统帮助.cs</DependentUpon>
+    </Compile>
+    <Compile Include="宿舍分配.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="宿舍分配.Designer.cs">
+      <DependentUpon>宿舍分配.cs</DependentUpon>
+    </Compile>
+    <Compile Include="宿舍报修.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="宿舍报修.Designer.cs">
+      <DependentUpon>宿舍报修.cs</DependentUpon>
+    </Compile>
+    <Compile Include="宿舍物品更换.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="宿舍物品更换.Designer.cs">
+      <DependentUpon>宿舍物品更换.cs</DependentUpon>
+    </Compile>
+    <Compile Include="宿舍维修施工.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="宿舍维修施工.Designer.cs">
+      <DependentUpon>宿舍维修施工.cs</DependentUpon>
+    </Compile>
+    <Compile Include="寝室状态.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="寝室状态.Designer.cs">
+      <DependentUpon>寝室状态.cs</DependentUpon>
+    </Compile>
+    <Compile Include="建立数据库表.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="建立数据库表.Designer.cs">
+      <DependentUpon>建立数据库表.cs</DependentUpon>
+    </Compile>
+    <Compile Include="教师来访登记.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="教师来访登记.Designer.cs">
+      <DependentUpon>教师来访登记.cs</DependentUpon>
+    </Compile>
+    <Compile Include="数据库备份.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="数据库备份.Designer.cs">
+      <DependentUpon>数据库备份.cs</DependentUpon>
+    </Compile>
+    <Compile Include="数据库恢复.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="数据库恢复.Designer.cs">
+      <DependentUpon>数据库恢复.cs</DependentUpon>
+    </Compile>
+    <Compile Include="物业人员信息.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="物业人员信息.Designer.cs">
+      <DependentUpon>物业人员信息.cs</DependentUpon>
+    </Compile>
+    <Compile Include="物品入库登记.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="物品入库登记.Designer.cs">
+      <DependentUpon>物品入库登记.cs</DependentUpon>
+    </Compile>
+    <Compile Include="物品出库登记.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="物品出库登记.Designer.cs">
+      <DependentUpon>物品出库登记.cs</DependentUpon>
+    </Compile>
+    <Compile Include="登录窗体.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="登录窗体.Designer.cs">
+      <DependentUpon>登录窗体.cs</DependentUpon>
+    </Compile>
+    <Compile Include="连接数据库.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="连接数据库.Designer.cs">
+      <DependentUpon>连接数据库.cs</DependentUpon>
+    </Compile>
+    <Compile Include="院系专业设置.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="院系专业设置.Designer.cs">
+      <DependentUpon>院系专业设置.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="修改密码.resx">
+      <DependentUpon>修改密码.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="公寓管理系统.resx">
+      <DependentUpon>公寓管理系统.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="住宿信息查询.resx">
+      <DependentUpon>住宿信息查询.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="公寓基本设置.resx">
+      <DependentUpon>公寓基本设置.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="公寓管理系统（管理端）.resx">
+      <DependentUpon>公寓管理系统（管理端）.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="公寓财产统计.resx">
+      <DependentUpon>公寓财产统计.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="员工分数录入.resx">
+      <DependentUpon>员工分数录入.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="员工基本资料.resx">
+      <DependentUpon>员工基本资料.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="员工评分设置.resx">
+      <DependentUpon>员工评分设置.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="外来人员登记.resx">
+      <DependentUpon>外来人员登记.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="学生住宿统计.resx">
+      <DependentUpon>学生住宿统计.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="学生信息增加.resx">
+      <DependentUpon>学生信息增加.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="学生晚归登记.resx">
+      <DependentUpon>学生晚归登记.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="学生管理系统帮助.resx">
+      <DependentUpon>学生管理系统帮助.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="宿舍分配.resx">
+      <DependentUpon>宿舍分配.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="宿舍报修.resx">
+      <DependentUpon>宿舍报修.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="宿舍更换.resx">
+      <DependentUpon>宿舍更换.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="宿舍物品更换.resx">
+      <DependentUpon>宿舍物品更换.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="宿舍维修施工.resx">
+      <DependentUpon>宿舍维修施工.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="密码找回.resx">
+      <DependentUpon>密码找回.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="寝室状态.resx">
+      <DependentUpon>寝室状态.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="建立数据库表.resx">
+      <DependentUpon>建立数据库表.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="教师来访登记.resx">
+      <DependentUpon>教师来访登记.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="数据库备份.resx">
+      <DependentUpon>数据库备份.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="数据库恢复.resx">
+      <DependentUpon>数据库恢复.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="添加用户.resx">
+      <DependentUpon>添加用户.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="物业人员信息.resx">
+      <DependentUpon>物业人员信息.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="物品入库登记.resx">
+      <DependentUpon>物品入库登记.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="物品出库登记.resx">
+      <DependentUpon>物品出库登记.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="登录窗体.resx">
+      <DependentUpon>登录窗体.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="连接数据库.resx">
+      <DependentUpon>连接数据库.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="院系专业设置.resx">
+      <DependentUpon>院系专业设置.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="experimentDataSet.xsc">
+      <DependentUpon>experimentDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="experimentDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>experimentDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="experimentDataSet.xss">
+      <DependentUpon>experimentDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
